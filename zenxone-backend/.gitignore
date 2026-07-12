@@ -1,0 +1,27 @@
+# Compiled output
+target/
+*.class
+
+# Eclipse files
+.settings/
+.classpath
+.project
+.factorypath
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Logs
+*.log
+
+# Uploaded files (local storage, never push real user documents)
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Maven wrapper (optional, keep if you want reproducible builds)
+# .mvn/

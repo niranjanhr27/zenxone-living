@@ -1,0 +1,149 @@
+.zx-reviews-summary {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.zx-reviews-summary-score {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.zx-reviews-summary-number {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.zx-reviews-summary-stars {
+  display: flex;
+  gap: 4px;
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+.zx-reviews-summary p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.zx-reviews-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.zx-review-card {
+  position: relative;
+  background: var(--card-bg-light);
+  padding: 34px 28px;
+  border-radius: 18px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+body.dark-mode .zx-review-card {
+  background: var(--card-bg-dark);
+}
+
+.zx-review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.zx-review-quote-icon {
+  color: var(--accent-color);
+  opacity: 0.15;
+  font-size: 32px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.zx-review-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.zx-star-filled {
+  color: var(--secondary-color);
+}
+
+.zx-star-empty {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .zx-star-empty {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.zx-review-text {
+  font-size: 14.5px;
+  line-height: 1.75;
+  opacity: 0.85;
+  margin-bottom: 24px;
+  min-height: 100px;
+}
+
+.zx-review-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.zx-review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.zx-review-author strong {
+  display: block;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+body.dark-mode .zx-review-author strong {
+  color: var(--text-dark);
+}
+
+.zx-review-author span {
+  font-size: 12.5px;
+  opacity: 0.6;
+}
+
+@media (max-width: 992px) {
+  .zx-reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .zx-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .zx-reviews-summary-number {
+    font-size: 32px;
+  }
+}

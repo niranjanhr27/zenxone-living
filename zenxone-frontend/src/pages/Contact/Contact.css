@@ -1,0 +1,160 @@
+.zx-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.zx-contact-info h2,
+.zx-contact-form-card h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+body.dark-mode .zx-contact-info h2,
+body.dark-mode .zx-contact-form-card h2 {
+  color: var(--text-dark);
+}
+
+.zx-contact-subtitle {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.zx-contact-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.zx-contact-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.zx-contact-item strong {
+  display: block;
+  font-size: 15px;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+body.dark-mode .zx-contact-item strong {
+  color: var(--text-dark);
+}
+
+.zx-contact-item p {
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+.zx-contact-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  transition: transform 0.2s ease;
+}
+
+.zx-contact-whatsapp-btn:hover {
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.zx-contact-map {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.zx-contact-form-card {
+  background: var(--card-bg-light);
+  border-radius: 20px;
+  padding: 36px;
+  height: fit-content;
+}
+
+body.dark-mode .zx-contact-form-card {
+  background: var(--card-bg-dark);
+}
+
+.zx-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.zx-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.zx-contact-form input,
+.zx-contact-form textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: 14px;
+  background: var(--bg-light);
+  color: inherit;
+  outline: none;
+  transition: border-color 0.25s ease;
+  font-family: inherit;
+}
+
+body.dark-mode .zx-contact-form input,
+body.dark-mode .zx-contact-form textarea {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: var(--bg-dark);
+}
+
+.zx-contact-form input:focus,
+.zx-contact-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.zx-contact-form textarea {
+  resize: vertical;
+}
+
+.zx-contact-submit {
+  padding: 14px !important;
+  font-size: 15px !important;
+}
+
+@media (max-width: 900px) {
+  .zx-contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .zx-form-row {
+    grid-template-columns: 1fr;
+  }
+}

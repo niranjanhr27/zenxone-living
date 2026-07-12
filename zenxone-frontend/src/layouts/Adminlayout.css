@@ -1,0 +1,22 @@
+.zx-admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-light);
+}
+
+body.dark-mode .zx-admin-layout {
+  background: var(--bg-dark);
+}
+
+.zx-admin-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 32px;
+}
+
+@media (max-width: 900px) {
+  .zx-admin-content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+}

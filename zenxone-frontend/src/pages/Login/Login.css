@@ -1,0 +1,181 @@
+.zx-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  padding: 100px 24px 40px;
+}
+
+.zx-login-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.zx-login-card {
+  background: var(--bg-light);
+  border-radius: 24px;
+  padding: 44px 36px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .zx-login-card {
+  background: var(--bg-dark);
+}
+
+.zx-login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.zx-login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.zx-login-logo-zx {
+  font-size: 30px;
+  font-weight: 800;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.zx-login-logo-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+body.dark-mode .zx-login-logo-text {
+  color: var(--text-dark);
+}
+
+.zx-login-header p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.zx-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.zx-form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+body.dark-mode .zx-form-group label {
+  color: var(--text-dark);
+}
+
+.zx-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 4px 14px;
+  transition: border-color 0.25s ease;
+  background: var(--bg-light);
+}
+
+body.dark-mode .zx-input-wrapper {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: var(--bg-dark);
+}
+
+.zx-input-wrapper:focus-within {
+  border-color: var(--accent-color);
+}
+
+.zx-input-icon {
+  color: var(--accent-color);
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.zx-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px 0;
+  font-size: 14px;
+  color: inherit;
+}
+
+.zx-toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent-color);
+  font-size: 15px;
+  padding: 4px;
+}
+
+.zx-login-submit {
+  margin-top: 8px;
+  padding: 14px !important;
+  font-size: 16px !important;
+  border-radius: 12px !important;
+}
+
+.zx-login-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.zx-login-demo-note {
+  margin-top: 28px;
+  background: var(--card-bg-light);
+  border-radius: 12px;
+  padding: 16px 18px;
+  text-align: center;
+}
+
+body.dark-mode .zx-login-demo-note {
+  background: var(--card-bg-dark);
+}
+
+.zx-login-demo-note strong {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.zx-demo-credentials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .zx-login-card {
+    padding: 32px 24px;
+  }
+  .zx-demo-credentials {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

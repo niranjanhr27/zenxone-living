@@ -1,0 +1,79 @@
+.zx-admin-dashboard h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+body.dark-mode .zx-admin-dashboard h1 {
+  color: var(--text-dark);
+}
+
+.zx-admin-subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 28px;
+}
+
+.zx-admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.zx-admin-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card-bg-light);
+  padding: 22px;
+  border-radius: 14px;
+}
+
+body.dark-mode .zx-admin-stat-card {
+  background: var(--card-bg-dark);
+}
+
+.zx-admin-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.zx-admin-stat-value {
+  display: block;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+body.dark-mode .zx-admin-stat-value {
+  color: var(--text-dark);
+}
+
+.zx-admin-stat-label {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  .zx-admin-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .zx-admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

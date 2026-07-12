@@ -1,0 +1,236 @@
+.zx-property-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.zx-property-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zx-property-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 31, 68, 0.7) 0%,
+    rgba(10, 31, 68, 0.9) 100%
+  );
+}
+
+.zx-property-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 0 24px;
+}
+
+.zx-property-hero-content .zx-section-tag {
+  color: var(--secondary-color);
+}
+
+.zx-property-hero-content h1 {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 12px 0 16px;
+}
+
+.zx-property-hero-content p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.zx-amazon-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.zx-amazon-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.zx-amazon-gallery-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 220px;
+}
+
+.zx-amazon-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.zx-amazon-gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.zx-amazon-gallery-item span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  padding: 30px 14px 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.zx-amazon-details {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+}
+
+.zx-amazon-highlights h2,
+.zx-amazon-pricing-card h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+body.dark-mode .zx-amazon-highlights h2,
+body.dark-mode .zx-amazon-pricing-card h2 {
+  color: var(--text-dark);
+}
+
+.zx-amazon-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.zx-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card-bg-light);
+  padding: 16px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+body.dark-mode .zx-highlight-item {
+  background: var(--card-bg-dark);
+  color: var(--text-dark);
+}
+
+.zx-highlight-item svg {
+  color: #22c55e;
+  flex-shrink: 0;
+}
+
+.zx-amazon-pricing-card {
+  background: var(--card-bg-light);
+  border-radius: 20px;
+  padding: 32px;
+  height: fit-content;
+}
+
+body.dark-mode .zx-amazon-pricing-card {
+  background: var(--card-bg-dark);
+}
+
+.zx-pricing-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.dark-mode .zx-pricing-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.zx-pricing-row span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.zx-pricing-row strong {
+  font-size: 22px;
+  color: var(--accent-color);
+}
+
+.zx-pricing-row strong small {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.zx-amazon-cta-buttons {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.zx-amazon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.zx-amazon-btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 2px solid #25d366;
+  color: #25d366;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.zx-amazon-btn-secondary:hover {
+  background: #25d366;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .zx-amazon-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .zx-amazon-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .zx-amazon-gallery {
+    grid-template-columns: 1fr;
+  }
+  .zx-amazon-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+  .zx-property-hero-content h1 {
+    font-size: 30px;
+  }
+}

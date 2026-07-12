@@ -1,0 +1,158 @@
+.zx-bhk-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  padding: 160px 24px 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.zx-bhk-hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.zx-bhk-hero-content .zx-section-tag {
+  color: var(--secondary-color);
+}
+
+.zx-bhk-hero-content h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 12px 0 10px;
+}
+
+.zx-bhk-hero-content p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.zx-bhk-coming-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.zx-bhk-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.zx-bhk-pricing-card {
+  background: var(--card-bg-light);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+body.dark-mode .zx-bhk-pricing-card {
+  background: var(--card-bg-dark);
+}
+
+.zx-bhk-pricing-card h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+body.dark-mode .zx-bhk-pricing-card h2 {
+  color: var(--text-dark);
+}
+
+.zx-bhk-pricing-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.zx-bhk-pricing-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-light);
+  padding: 20px 24px;
+  border-radius: 14px;
+}
+
+body.dark-mode .zx-bhk-pricing-item {
+  background: var(--bg-dark);
+}
+
+.zx-bhk-pricing-item span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.zx-bhk-pricing-item strong {
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.zx-bhk-pricing-item strong small {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.zx-bhk-note {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.zx-bhk-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.zx-bhk-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.zx-bhk-btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 2px solid #25d366;
+  color: #25d366;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.zx-bhk-btn-secondary:hover {
+  background: #25d366;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .zx-bhk-hero-content h1 {
+    font-size: 30px;
+  }
+  .zx-bhk-pricing-card {
+    padding: 28px 20px;
+  }
+}

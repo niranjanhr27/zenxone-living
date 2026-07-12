@@ -1,0 +1,235 @@
+.zx-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  padding: 18px 0;
+  transition: all 0.35s ease;
+}
+
+.zx-navbar-scrolled {
+  background: var(--bg-light);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
+}
+
+body.dark-mode .zx-navbar-scrolled {
+  background: var(--bg-dark);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.zx-navbar-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.zx-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.zx-navbar-scrolled .zx-logo {
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+body.dark-mode .zx-navbar-scrolled .zx-logo {
+  color: var(--text-dark);
+}
+
+.zx-logo-zx {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.zx-logo-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.zx-logo-accent {
+  color: var(--secondary-color);
+}
+
+.zx-logo-text small {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.zx-links {
+  display: flex;
+  gap: 28px;
+}
+
+.zx-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  padding-bottom: 4px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.zx-navbar-scrolled .zx-link {
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+body.dark-mode .zx-navbar-scrolled .zx-link {
+  color: var(--text-dark);
+}
+
+.zx-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+.zx-link:hover::after,
+.zx-link-active::after {
+  width: 100%;
+}
+
+.zx-link-active {
+  color: var(--secondary-color);
+}
+
+.zx-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.zx-theme-toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.zx-navbar-scrolled .zx-theme-toggle {
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+body.dark-mode .zx-navbar-scrolled .zx-theme-toggle {
+  color: var(--secondary-color);
+}
+
+.zx-login-btn {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 15px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.zx-navbar-scrolled .zx-login-btn {
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+body.dark-mode .zx-navbar-scrolled .zx-login-btn {
+  color: var(--text-dark);
+}
+
+.zx-book-btn {
+  padding: 8px 22px !important;
+  font-size: 14px !important;
+}
+
+.zx-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.zx-navbar-scrolled .zx-hamburger {
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+body.dark-mode .zx-navbar-scrolled .zx-hamburger {
+  color: var(--text-dark);
+}
+
+@media (max-width: 992px) {
+  .zx-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 260px;
+    background: var(--bg-light);
+    flex-direction: column;
+    padding: 100px 30px;
+    gap: 24px;
+    transition: right 0.35s ease;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark-mode .zx-links {
+    background: var(--bg-dark);
+  }
+
+  .zx-links-open {
+    right: 0;
+  }
+
+  .zx-links .zx-link {
+    color: var(--primary-color);
+    text-shadow: none;
+  }
+
+  body.dark-mode .zx-links .zx-link {
+    color: var(--text-dark);
+  }
+
+  .zx-hamburger {
+    display: block;
+  }
+
+  .zx-login-btn {
+    display: none;
+  }
+}
+
+.zx-navbar-logo-img {
+  height: 52px;
+  width: auto;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 3px 6px;
+  object-fit: contain;
+}

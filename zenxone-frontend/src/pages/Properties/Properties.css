@@ -1,0 +1,124 @@
+.zx-page-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  padding: 160px 24px 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.zx-page-hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.zx-page-hero-content .zx-section-tag {
+  color: var(--secondary-color);
+}
+
+.zx-page-hero-content h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 12px 0 16px;
+}
+
+.zx-page-hero-content p {
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.zx-properties-list-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.zx-property-list-card {
+  background: var(--card-bg-light);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .zx-property-list-card {
+  background: var(--card-bg-dark);
+}
+
+.zx-property-list-card:hover {
+  transform: translateY(-6px);
+}
+
+.zx-property-list-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.zx-property-list-coming-soon {
+  height: 280px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.zx-property-list-info {
+  padding: 30px;
+}
+
+.zx-property-list-info h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+body.dark-mode .zx-property-list-info h2 {
+  color: var(--text-dark);
+}
+
+.zx-property-list-info p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 18px;
+}
+
+.zx-property-list-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.zx-property-list-info .btn-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .zx-properties-list-grid {
+    grid-template-columns: 1fr;
+  }
+  .zx-page-hero-content h1 {
+    font-size: 30px;
+  }
+}
