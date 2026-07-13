@@ -25,3 +25,9 @@ Thumbs.db
 
 # Maven wrapper (optional, keep if you want reproducible builds)
 # .mvn/
+
+# Environment variables
+.env
+
+# Build output (VS Code / Eclipse)
+bin/
