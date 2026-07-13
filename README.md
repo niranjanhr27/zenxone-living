@@ -124,73 +124,73 @@ zenxone-living
 
 ## Home Page
 
-![Home Page](zenxone-frontend/src/assets/images/home-page.png)
+![Home Page](zenxone-frontend/src/assets/images/screenshots/home-page.png)
 
 ---
 
 ## Login Page
 
-![Login Page](zenxone-frontend/src/assets/images/login-page.png)
+![Login Page](zenxone-frontend/src/assets/images/screenshots/login-page.png)
 
 ---
 
 ## Properties Page
 
-![Properties Page](zenxone-frontend/src/assets/images/properties-page.png)
+![Properties Page](zenxone-frontend/src/assets/images/screenshots/properties-page.png)
 
 ---
 
 ## Booking Page
 
-![Booking Page](zenxone-frontend/src/assets/images/booking-page.png)
+![Booking Page](zenxone-frontend/src/assets/images/screenshots/booking-page.png)
 
 ---
 
 ## Admin Dashboard
 
-![Admin Dashboard](zenxone-frontend/src/assets/images/admin-dashboard.png)
+![Admin Dashboard](zenxone-frontend/src/assets/images/screenshots/admin-dashboard.png)
 
 ---
 
 ## Property Management
 
-![Property Management](zenxone-frontend/src/assets/images/property-management.png)
+![Property Management](zenxone-frontend/src/assets/images/screenshots/property-management.png)
 
 ---
 
 ## Room Management
 
-![Room Management](zenxone-frontend/src/assets/images/room-management.png)
+![Room Management](zenxone-frontend/src/assets/images/screenshots/room-management.png)
 
 ---
 
 ## Student Management
 
-![Student Management](zenxone-frontend/src/assets/images/student-management.png)
+![Student Management](zenxone-frontend/src/assets/images/screenshots/student-management.png)
 
 ---
 
 ## Booking Management
 
-![Booking Management](zenxone-frontend/src/assets/images/booking-management.png)
+![Booking Management](zenxone-frontend/src/assets/images/screenshots/booking-management.png)
 
 ---
 
 ## Payment Management
 
-![Payment Management](zenxone-frontend/src/assets/images/payment-management.png)
+![Payment Management](zenxone-frontend/src/assets/images/screenshots/payment-management.png)
 
 ---
 
 ## Lead Management
 
-![Lead Management](zenxone-frontend/src/assets/images/lead-management.png)
+![Lead Management](zenxone-frontend/src/assets/images/screenshots/lead-management.png)
 
 ---
 
 ## Visit Management
 
-![Visit Management](zenxone-frontend/src/assets/images/visit-management.png)
+![Visit Management](zenxone-frontend/src/assets/images/screenshots/visit-management.png)
 
 ---
 
